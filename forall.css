@@ -48,6 +48,8 @@ h1 {
 }
 footer {
     position: fixed;
+    font-size: 10;
+    
     bottom: 0;
     width: 99%;
     height: 10%;
