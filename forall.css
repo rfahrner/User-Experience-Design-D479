@@ -48,11 +48,9 @@ h1 {
 }
 footer {
     position: fixed;
-    font-size: 10;
-    
     bottom: 0;
     width: 99%;
-    height: 10%;
+    height: 40px;
     background-color: rgba(136, 125, 125, 0.39);
     color:beige;
     padding: 2px;
