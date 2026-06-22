@@ -12,9 +12,7 @@ main {
     flex: 1;
     padding-top: 100px;
 }
-a:hover {
-    color: pink;
-}
+
 header {
     position: fixed;
     top: 10;
@@ -27,6 +25,13 @@ header {
 }
 h1 {
     padding-left: 35px;
+}
+h2 {
+    padding-left: 35px;
+}
+p {
+    padding-left: 35px;
+    padding-right: 35px;
 }
 #floatMe {
     float: right;
@@ -82,20 +87,20 @@ input {
     position: relative;
     left: 120px;
 }
-.btn-professional {
+.btn-professionalish {
   /* Typography */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: 500;
-  color: #ffffff;
+  color: #EFEBD4;
   
   /* Structure & Sizing */
-  padding: 8px 16px;
-  border-radius: 6px;
+  padding: 16px 24px;
+  border-radius: 14px;
   border: 1px solid transparent; /* Prevents layout shift if borders are added later */
   
   /* Colors & Subtle Depth */
-  background-color: #2563eb; /* A clean, trustworthy "enterprise" blue */
+  background-color: #B75E41; /* A clean, trustworthy "enterprise" blue */
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Extremely subtle depth */
   
   /* Interaction */
@@ -104,13 +109,13 @@ input {
 }
 
 /* Hover State */
-.btn-professional:hover {
-  background-color: #1d4ed8; /* Shifts to a slightly darker, richer blue */
+.btn-professionalish:hover {
+  background-color: #9c5138; /* Shifts to a slightly darker, richer blue */
 }
 
 /* Active (Click) State */
-.btn-professional:active {
-  background-color: #1e40af;
+.btn-professionalish:active {
+  background-color: #8b4832;
   box-shadow: none; /* Flattens the button when pressed */
 }
 
