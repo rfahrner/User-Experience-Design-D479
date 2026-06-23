@@ -16,55 +16,87 @@
                 </ul>
             </nav>
         </header>
-        <div id="container">
-        <form id="userForm">
-            <p>A representative will reach out shortly!</p>
-            <div class="form-row">
-                <label for="first">First Name:</label>
-                <input type="text" id="first" name="first"></br>
-            </div>
+<div id="container" style="display: flex; justify-content: center; align-items: center; padding: 120px 20px 40px; min-height: 80vh;">
+    
+    <div class="tab-window">
+        
+        <div class="tab-header">
+            <button class="tab-btn active" onclick="openTab(event, 'BookNowTab')">Book Now</button>
+            <button class="tab-btn" onclick="openTab(event, 'FAQTab')">Questions</button>
+        </div>
 
-            <div class="form-row">
-                <label for="last">Last Name:</label>
-                <input type="text" id="last" name="last"></br>
-            </div>
+        <div id="BookNowTab" class="tab-content" style="display: block;">
+            <h2>A few details to connect with your representative</h2>
+            <form class="clean-form">
+                <div class="form-group">
+                    <label for="fname-book">First Name:</label>
+                    <input type="text" id="fname-book" name="fname">
+                </div>
+                <div class="form-group">
+                    <label for="lname-book">Last Name:</label>
+                    <input type="text" id="lname-book" name="lname">
+                </div>
+                <div class="form-group">
+                    <label for="email-book">Email Address:</label>
+                    <input type="email" id="email-book" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="re-email-book">Re-Enter Email Address:</label>
+                    <input type="email" id="re-email-book" name="re-email">
+                </div>
+                <div class="form-group">
+                    <label for="details-book">Any specific booking requests?</label>
+                    <textarea id="details-book" name="details" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn-professionalish">Submit Booking Request</button>
+            </form>
+        </div>
 
-            <div class="form-row">
-                <label for="email">Email Address:</label>
-                <input type="text" id="email" name="email"></br>
-            </div>
-            <div class="form-row">
-                <label for="verifyEmail">Re Enter Email Address:</label>
-                <input type="text" id="verifyEmail" name="verifyEmail"></br>
-                <script src="validate.js" defer></script>
-            </div>
-            <div class="form-row align-top">
-                <label for="questions">Do you have any questions for our Taniti experts?</label>
-                <textarea id="questions" name="questions" rows="4" cols="50"></textarea>
-            </div>
-                <button type="submit" value="Submit">Submit</button>
-            <script src="validate.js" defer></script>
-            <h2>Frequently asked questions:</h2>
-            <ul>
-                <li>outlets are 120 volts (the same as in the United States).</li>
-                <li>Alcohol is not allowed to be served or sold between the hours of midnight and 9:00 a.m.</li>
-                <li>The drinking age on Taniti is 18 and the drinking age is not strictly enforced.</li>
-                <li>Many younger Tanitians speak fluent English. Very little English is spoken in rural areas, especially by the older residents.</li>
-                <li>There is one hospital and several clinics. The hospital has many multilingual employees.</li>
-                <li>Violent crime is very rare on Taniti, but as tourism increases, there are more reports of pickpocketing and other petty crimes.</li>
-                <li>Taniti enjoys a large number of national holidays, and many tourist attractions and restaurants will be closed on holidays, so visitors should plan accordingly.</li>
-                <li>Taniti uses the U.S. dollar as its currency, but many businesses will also accept euros and yen. Several banks facilitate currency exchange, and many businesses accept major credit cards.</li>
-                </ul>    
-        </form>
-    <img id="floatMe" src="https://www.citypng.com/public/uploads/preview/yellow-and-red-question-mark-vector-icon-png-701751694962284jstwye919s.png" alt="Question marks">
-        <!----
-        <aside>
-            <p>For further information about the state of Tenneessee<a href="https://en.wikipedia.org/wiki/Tennessee" target="_blank"> visit the Tennessee wikipedia page.</a>
-        </aside>
-        -->  
+        <div id="FAQTab" class="tab-content">            
             
-</body>
+            <h2>Have Questions?</h2>
+            <form class="clean-form" style="margin-bottom: 50px;">
+                <div class="form-group">
+                    <label for="fname-q">First Name:</label>
+                    <input type="text" id="fname-q" name="fname">
+                </div>
+                <div class="form-group">
+                    <label for="lname-q">Last Name:</label>
+                    <input type="text" id="lname-q" name="lname">
+                </div>
+                <div class="form-group">
+                    <label for="email-q">Email Address:</label>
+                    <input type="email" id="email-q" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="re-email-q">Re-Enter Email Address:</label>
+                    <input type="email" id="re-email-q" name="re-email">
+                </div>
+                <div class="form-group">
+                    <label for="questions-q">Do you have any questions for our Taniti experts?</label>
+                    <textarea id="questions-q" name="questions" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn-professionalish">Submit Question</button>
+            </form>
+
+            <h2>Frequently Asked Questions</h2>
+            <ul class="faq-list">
+                <li><strong>Power:</strong> Outlets are 120 volts (the same as in the United States).</li>
+                <li><strong>Alcohol:</strong> Alcohol is not allowed to be served or sold between the hours of midnight and 9:00 a.m.</li>
+                <li><strong>Drinking Age:</strong> The drinking age on Taniti is 18 and is not strictly enforced.</li>
+                <li><strong>Language:</strong> Many younger Tanitians speak fluent English. Very little English is spoken in rural areas, especially by the older residents.</li>
+                <li><strong>Healthcare:</strong> There is one hospital and several clinics. The hospital has many multilingual employees.</li>
+                <li><strong>Safety:</strong> Violent crime is very rare on Taniti, but as tourism increases, there are more reports of pickpocketing and other petty crimes.</li>
+                <li><strong>Holidays:</strong> Taniti enjoys a large number of national holidays, and many tourist attractions and restaurants will be closed on holidays, so visitors should plan accordingly.</li>
+                <li><strong>Currency:</strong> Taniti uses the U.S. dollar as its currency, but many businesses will also accept euros and yen. Several banks facilitate currency exchange, and many businesses accept major credit cards.</li>
+            </ul>
+
+        </div>
+
+    </div>
 </div>
+
+<script src="tabs.js"></script>
 <footer>
         <p style="font-size: 10px;">© 2026 Taniti Tourism Board. All rights reserved.</p>
 </footer>

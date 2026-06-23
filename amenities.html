@@ -5,7 +5,7 @@
 
     </head>
     <body>
-        <header style="display: flex; align-items: center; justify-content: flex-start; padding-bottom: 10; padding: 10px 20px;">
+        <header style="display: flex; align-items: center; justify-content: flex-start; padding-bottom: 10px; padding: 10px 20px;">
             <img src="c:\Users\Ronfa\Downloads\taniti-logo.png" alt="Logo" style="height: 100px; margin-right: 20px; padding-left: 100px;">
             <nav>
                 <ul style="list-style-type: none; display: flex; gap: 10px; margin: 0; padding: 0;">
@@ -16,41 +16,55 @@
                 </ul>
             </nav>
         </header>
-        <div id="container">
-        <main class="changeColor"style="flex: 0 1 80%;padding-top: 90px;">
-            <h1>Taniti Amenities!</h1>
-            <h2>Restaurants:</h2>
-            <p>Restaurants: Taniti currently has 10 restaurants: five serve mostly local fish and rice, three serve American-style meals, and two serve Pan-Asian cuisine.</p>
-            <p id="note">We would also place links and images for popular retaurants here. Maybe even breaking them up into groups based on what kind of food they serve (local cuisine, american food, italian) or formal and casual dining.</p>
+
+        <div id="container" style="display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; padding: 20px 40px; padding-top: 120px;">        
             
-            <h2>Grocery Stores:</h2>
-            <p>Taniti has two supermarkets, two smaller grocery stores, and one convenience store that is open 24 hours a day. </p>
-            <p id="note"> Again, specific supermarkets can be added here, with links and images</p>
+            <main class="changeColor" style="flex: 1; display: flex; flex-direction: column; align-items: flex-start;">
+                
+                <div class="accordion-container" style="width: 100%;">
+                    <button class="accordion">Restaurants</button>
+                    <div class="panel">
+                        <p>Taniti currently has 10 restaurants: five serve mostly local fish and rice, three serve American-style meals, and two serve Pan-Asian cuisine.</p>
+                        <p><em>(Placeholder for popular restaurant links, images, and category breakdowns: local cuisine, american food, italian, formal vs. casual dining.)</em></p>
+                    </div>
 
-            <h2>Lodging:</h2>
-            <p id="note">Taniti has a wide variety of lodging that ranges from an inexpensive hostel to one large, four-star resort. There are many small, family-owned hotels and a growing number of bed and breakfasts. All types of lodging are strictly regulated and regularly inspected by the Tanitian government.</p>
-            <p id="note">Again, further details here</p>
+                    <button class="accordion">Grocery Stores</button>
+                    <div class="panel">
+                        <p>Taniti has two supermarkets, two smaller grocery stores, and one convenience store that is open 24 hours a day.</p>
+                        <p><em>(Placeholder for specific supermarket links and images.)</em></p>
+                    </div>
 
-            <h2>Transportation:</h2>
-            <p>Almost all visitors arrive to Taniti by air, though some arrive on a small cruise ship that docks in Yellow Leaf Bay for one night per week. Taniti is served by a small airport that can accommodate small jets and propeller planes. Taniti is in the process of expanding the airport so larger jets will be able to land on the island within the next few years. </p>
+                    <button class="accordion">Lodging</button>
+                    <div class="panel">
+                        <p>Taniti has a wide variety of lodging that ranges from an inexpensive hostel to one large, four-star resort. There are many small, family-owned hotels and a growing number of bed and breakfasts. All types of lodging are strictly regulated and regularly inspected by the Tanitian government.</p>
+                        <p><em>(Placeholder for further lodging details and images.)</em></p>
+                    </div>
 
-            <h2>Ground Transportation:</h2>
-            <p>Public buses serve Taniti City and run from 5 a.m. to 11 p.m. every day. Private buses serve the rest of the island. Taxis are available in Taniti City, and rental cars can be rented from a local rental agency near the airport. Bikes and helmets are available to rent from several vendors (helmets are required by law). Taniti City is fairly flat and very walkable. Many tourists stay in the area surrounding Merriton Landing: this area is easy to explore on foot.</p>
+                    <button class="accordion">Transportation</button>
+                    <div class="panel">
+                        <p>Almost all visitors arrive to Taniti by air, though some arrive on a small cruise ship that docks in Yellow Leaf Bay for one night per week. Taniti is served by a small airport that can accommodate small jets and propeller planes. Taniti is in the process of expanding the airport so larger jets will be able to land on the island within the next few years.</p>
+                    </div>
 
-        <button class="btn-professionalish" type="button" style="margin-bottom: 40px;"onclick="window.location.href='contact.html'">Plan my stay!</button>
-        <script src="validate.js" defer></script>  
-        </main>
-        <img src="https://images.unsplash.com/photo-1728042743603-e84b7f033050?q=80&w=1075&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="height: 500px; float: right; padding-top: 115px; padding-right: 10px;" alt="Aerial beach view">
-        <!----
-        <aside>
-            <p>For further information about the state of Tenneessee<a href="https://en.wikipedia.org/wiki/Tennessee" target="_blank"> visit the Tennessee wikipedia page.</a>
-        </aside>
-        -->
+                    <button class="accordion">Ground Transportation</button>
+                    <div class="panel">
+                        <p>Public buses serve Taniti City and run from 5 a.m. to 11 p.m. every day. Private buses serve the rest of the island. Taxis are available in Taniti City, and rental cars can be rented from a local rental agency near the airport. Bikes and helmets are available to rent from several vendors (helmets are required by law). Taniti City is fairly flat and very walkable. Many tourists stay in the area surrounding Merriton Landing: this area is easy to explore on foot.</p>
+                    </div>
+                </div>
+
+                <button class="btn-professionalish" type="button" style="margin-top: 20px; margin-bottom: 40px;" onclick="window.location.href='contact.html'">Plan my stay!</button>
+
+            </main>
+
+            <div style="flex: 1; display: flex; justify-content: flex-end; padding-top: 60px; padding-right: 40px;">
+                <img src="https://images.unsplash.com/photo-1728042743603-e84b7f033050?q=80&w=1075&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width: 100%; max-width: 600px; height: auto; border-radius: 20px; object-fit: cover;" alt="Aerial beach view">
+            </div>
 
         </div>
+
+        <script src="validate.js"></script>  
+        <script src="accordian.js"></script> 
     </body>
     <footer>
         <p style="font-size: 10px;">© 2026 Taniti Tourism Board. All rights reserved.</p>
-    </footer>     
-
- 
+    </footer>
+</html>
